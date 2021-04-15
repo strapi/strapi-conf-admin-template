@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "name": "sponsor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "cardImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    },
+    "youtubeSlug": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "tierRank": {
+      "type": "string"
+    },
+    "callToAction": {
+      "type": "string"
+    },
+    "callToActionLink": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.settings"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}

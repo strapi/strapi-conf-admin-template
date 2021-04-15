@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stages",
+  "info": {
+    "name": "stage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "stream": {
+      "type": "string",
+      "required": false
+    },
+    "schedule": {
+      "collection": "talk"
+    },
+    "order": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.settings"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

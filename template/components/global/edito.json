@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_global_editos",
+  "info": {
+    "name": "edito",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "homeTitle": {
+      "type": "richtext"
+    },
+    "homeSubtitle": {
+      "type": "richtext"
+    },
+    "joinTitle": {
+      "type": "richtext"
+    },
+    "joinSubtitle": {
+      "type": "richtext"
+    },
+    "learnMore": {
+      "type": "richtext"
+    }
+  }
+}

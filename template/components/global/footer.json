@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "name": "footer",
+    "icon": "dice-d6",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "credits": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    }
+  }
+}

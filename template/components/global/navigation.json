@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_navigations",
+  "info": {
+    "name": "navigation",
+    "icon": "chalkboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    }
+  }
+}

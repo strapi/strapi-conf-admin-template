@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "pagesSettings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "homepage",
+        "stages",
+        "schedule",
+        "speakers",
+        "sponsors",
+        "jobs",
+        "perks",
+        "ticket",
+        "workshops"
+      ]
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.settings"
+    }
+  }
+}
